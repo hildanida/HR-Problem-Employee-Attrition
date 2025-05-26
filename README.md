@@ -28,7 +28,7 @@ Manajemen HR ingin menjawab pertanyaan-pertanyaan berikut:
 3. Distribusi berdasarkan usia, pendapatan, job role, overtime, dan lainnya
 
 ## Preparation
-Sumber data: [Data Employee Attrition](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)
+Sumber data: [Data Employee Attrition](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)<br>
 Setup environment:
 1. Clone Repository
 ```bash
