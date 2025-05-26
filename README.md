@@ -68,3 +68,13 @@ streamlit run streamlit_app.py
 ```
 
 ## Business Dashboard
+![Dashboard Attrition](employee-attrition-dashboard.png)
+Dashboard ini [Employee Attrition Dashboard](https://public.tableau.com/views/employee-attrition/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) merupakan visualisasi menyeluruh untuk memahami pola dan faktor-faktor yang berkaitan dengan *attrition* (keluar dari perusahaan) di Jaya Jaya Maju. Dashboard ini mencakup total karyawan, tingkat attrition, perbandingan pendapatan, serta distribusi attrition berdasarkan usia, jenis kelamin, pendapatan, jabatan, departemen, keseimbangan kerja, hingga overtime.
+
+Dari visualisasi ini, kita bisa melihat bahwa attrition lebih sering terjadi pada karyawan dengan pendapatan rendah, durasi kerja yang lebih singkat, dan beban kerja lebih tinggi (terlihat dari proporsi overtime). Role seperti *Sales Executive* dan *Laboratory Technician* juga menunjukkan angka keluar yang tinggi. Temuan-temuan ini dapat menjadi dasar bagi tim HR untuk mengambil langkah strategis dalam meningkatkan retensi karyawan.
+
+Berdasarkan dashboard, terlihat bahwa attrition lebih banyak terjadi pada karyawan pria, khususnya yang berusia di bawah 30 tahun dan memiliki pendapatan di bawah 3.000 USD. Salah satu faktor paling mencolok adalah *overtime*—lebih dari separuh karyawan yang keluar ternyata bekerja lembur secara rutin. Selain itu, tingkat kepuasan terhadap work-life balance dan job satisfaction yang rendah juga tampak selaras dengan tingginya angka attrition. Dari sisi jabatan, posisi *Sales Executive* dan *Laboratory Technician* memiliki tingkat keluar yang cukup tinggi dibanding peran lainnya, yang bisa menjadi indikator beban kerja atau tekanan yang lebih besar pada posisi tersebut. Insight ini mengarah pada pentingnya perhatian lebih terhadap keseimbangan kerja, kebijakan kompensasi, dan lingkungan kerja di jabatan-jabatan tertentu untuk menekan angka attrition ke depan.
+
+## Conclusion
+
+## Recommendation
