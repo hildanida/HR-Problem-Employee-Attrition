@@ -76,5 +76,28 @@ Dari visualisasi ini, kita bisa melihat bahwa attrition lebih sering terjadi pad
 Berdasarkan dashboard, terlihat bahwa attrition lebih banyak terjadi pada karyawan pria, khususnya yang berusia di bawah 30 tahun dan memiliki pendapatan di bawah 3.000 USD. Salah satu faktor paling mencolok adalah *overtime*—lebih dari separuh karyawan yang keluar ternyata bekerja lembur secara rutin. Selain itu, tingkat kepuasan terhadap work-life balance dan job satisfaction yang rendah juga tampak selaras dengan tingginya angka attrition. Dari sisi jabatan, posisi *Sales Executive* dan *Laboratory Technician* memiliki tingkat keluar yang cukup tinggi dibanding peran lainnya, yang bisa menjadi indikator beban kerja atau tekanan yang lebih besar pada posisi tersebut. Insight ini mengarah pada pentingnya perhatian lebih terhadap keseimbangan kerja, kebijakan kompensasi, dan lingkungan kerja di jabatan-jabatan tertentu untuk menekan angka attrition ke depan.
 
 ## Conclusion
+1. Tingkat Attrition perusahaan cukup tinggi (~13%), dengan lebih dari setengah karyawan yang keluar memiliki pola kerja lembur (OverTime = Yes).
+2. Karyawan dengan pendapatan rendah (<3K USD), usia muda (< 30 tahun), dan masa kerja singkat (< 5 tahun) cenderung lebih rawan keluar.
+3. Role yang paling berisiko attrition tinggi adalah Sales Executive, Laboratory Technician, dan Research Director. Hal ini muncul di koefisien model (onehot_OverTime_Yes, onehot__JobRole_Research Director, onehot__JobRole_Sales Executive, dll) dan juga di plot SHAP.
+4. Faktor non-teknis—seperti status lajang (Single), frekuensi dinas/ travel tinggi, dan work-life balance yang rendah—juga memberikan kontribusi signifikan terhadap keputusan keluar karyawan.
+5. Model prediktif (Logistic Regression + SHAP) menunjukkan OverTime sebagai driver terkuat, diikuti oleh aspek jabatan, marital status, dan metrik tenure (YearsWithCurrManager, YearsAtCompany).
 
 ## Recommendation
+1. Kurangi Beban Lembur
+- Tinjau kebijakan lembur: batasi jam lembur per minggu, atur rotasi tugas agar beban kerja lebih merata.
+- Terapkan sistem insentif/bonus lembur agar karyawan merasa dihargai—jika lembur tidak bisa dihindari.
+2. Penyesuaian Kompensasi
+- Naikkan gaji atau tunjangan untuk segmen pendapatan < 5K USD, khususnya di role Sales & Lab Technician.
+- Pertimbangkan bonus retention atau program pengakuan (recognition program) untuk role berisiko tinggi.
+3. Perbaiki Work-Life Balance & Kepuasan Kerja
+- Sediakan opsi fleksibilitas jam kerja (flextime), hybrid/remote working, atau cuti tambahan.
+- Lakukan survei kepuasan rutin untuk menangkap isu job satisfaction dan environment satisfaction lebih dini.
+4. Fokus pada Role High-Risk
+- Buat program mentoring atau career-path khusus untuk Sales Executive, Research Director, dan Lab Technician.
+- Sediakan pelatihan manajerial bagi atasan langsung—karena hubungan dengan manajer (YearsWithCurrManager) juga berpengaruh pada retensi.
+5. Dukung Karyawan Muda & Lajang
+- Tawarkan program onboarding dan buddy system untuk karyawan baru/ muda agar cepat beradaptasi.
+- Fasilitasi kegiatan sosial atau komunitas karyawan untuk meningkatkan engagement, terutama bagi yang status Single.
+6. Implementasi Monitoring & Predictive Alert
+- Integrasikan model prediktif ke dashboard HR untuk memantau “early warning” (misal: kombinasi overtime + low satisfaction).
+- Set up notifikasi otomatis ketika skor risiko attrition melewati threshold tertentu, sehingga tim HR bisa proaktif menindaklanjuti.
