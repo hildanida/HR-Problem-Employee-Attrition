@@ -62,10 +62,6 @@ import plotly.express as px
 # Untuk dashboard interaktif
 import streamlit as st
 ```
-5. Run Streamlit
-```bash
-streamlit run streamlit_app.py
-```
 
 ## Business Dashboard
 ![Dashboard Attrition](employee-attrition-dashboard.png)
